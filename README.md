@@ -1,3 +1,7 @@
+Live verzija na linku : https://64a5769b13949d096ae96b56--imaginative-salamander-483e55.netlify.app/
+
+___________________________________
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
