@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useMemo, useState } from "react";
 import { randomName } from "./randomizirajuce/randomName.js";
-import { getRandomBackgroundImage } from "./randomizirajuce/randomColor.js";
+import { getRandomBackgroundImage } from "./randomizirajuce/randomAvatar.js";
 // ubacivanje retka ispod kroz npm naredbu iz razloga ne-reagiranja na moju api moje sobe.
 import Scaledrone from "scaledrone-react-native";
 

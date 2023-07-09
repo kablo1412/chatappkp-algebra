@@ -1,7 +1,3 @@
-/*export function randomColor() {
-  return "#" + Math.floor(Math.random() * 0xffffff).toString(16);
-} */
-
 const backgroundImages = [
   "/avatar-img/6769264_60111.jpg",
   "/avatar-img/27470334_7309681.jpg",
