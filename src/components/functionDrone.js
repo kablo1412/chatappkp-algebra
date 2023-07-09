@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useMemo, useState } from "react";
-import { randomName } from "./randomizirajuce/randomName";
-import { randomColor } from "./randomizirajuce/randomColor";
+import { randomName } from "./randomizirajuce/randomName.js";
+import { getRandomBackgroundImage } from "./randomizirajuce/randomColor.js";
 // ubacivanje retka ispod kroz npm naredbu iz razloga ne-reagiranja na moju api moje sobe.
 import Scaledrone from "scaledrone-react-native";
 
@@ -8,7 +8,7 @@ export default function useDrone() {
   // stanje člana sobe
   const [member, setMember] = useState({
     name: randomName(), // generiranje nasumičnog imena loristeći dvije riječi iz randomName komponente
-    color: randomColor(), // isto kao komentar iznad, samo za boju.
+    color: getRandomBackgroundImage(), // isto kao komentar iznad, samo za boju.
   });
   const [connected, setConnected] = useState(false); // stanje povezanosti
   const [isOpened, setIsOpened] = useState(false); // stanje otvorenosti veze

@@ -1,15 +1,26 @@
+import "./styles/messages.css";
+
 export default function Messages({ messages, currentMember }) {
   // renderiranje jedne odnosno zasebne poruke
   const renderMessage = (message) => {
     const { member, text } = message.data;
     const messageFromMe = member.id === currentMember.id;
     const className = messageFromMe ? "message currentMember" : "message";
-
+    const timestamp = new Date(message.timestamp).toLocaleString(undefined, {
+      hour: "numeric",
+      minute: "numeric",
+    });
     return (
       <li className={className} key={message.id}>
-        <span className="avatar" style={{ backgroundColor: member.color }} />
+        <img
+          className="avatar"
+          src={member.color}
+          alt={`${member.name}'s Avatar`}
+        />
         <div className="message-content">
-          <div className="username">{member.name}</div>
+          <div className="username">
+            {member.name} at {timestamp}
+          </div>
           <div className="text">{text}</div>
         </div>
       </li>

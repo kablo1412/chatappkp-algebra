@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
-import useDrone from "./functionDrone.js";
-import useRoom from "./functionRoom.js";
-import Messages from "./Messages";
-import Input from "./Input";
+import useDrone from "./components/functionDrone";
+import useRoom from "./components/functionRoom";
+import Messages from "./components/Messages";
+import Input from "./components/Input";
 
 export default function App() {
   const [messages, setMessages] = useState([]);

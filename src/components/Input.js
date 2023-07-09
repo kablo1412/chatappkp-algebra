@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "./styles/input.css";
 
 export default function Input(dogadaj) {
   const [inputValue, setInputValue] = useState("");
